@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mymovieapp</string>
+    <string name="button">Button</string>
+    <string name="secured">secured</string>
+    <string name="head_of_states">head of states</string>
+    <string name="name">Name</string>
+    <string name="press">Button</string>
+</resources>
