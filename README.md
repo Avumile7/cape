@@ -21,7 +21,17 @@ link for content research and sourcing .https://1drv.ms/w/c/8482d9d4034daf79/EVl
 link for sitemap .https://app.visily.ai/projects/ee35b162-a1bd-4b95-925f-fe1d1daf4a58/boards/2145309
 
 
+
                                                                                               COMMITED CHANGES  IN HTML FILES
+																							  
+																							  
+																							  
+                                                                                            CHANGES 
+																							
+
+																							
+	I CHANGED THE WEBSITE FOLDER BUT THE CONTENT AND THE FUNCTIONALITY ARE STILL THE SAME 
+	
                                                                                               
                                                                                               
                                                                                             
@@ -61,13 +71,17 @@ enquiry.html	<form action="#" method="post">	Implemented a structured form with 
 
 
                                                                                                  2. COMMITED CHANGES IN CSS 
+																								 
                                                                                                  
                                                                                                  2. CSS Styling and Responsive Design Changes
+																								 
                                                                                                  
 This is the largest area of change, as it is where the visual design and responsive functionality were implemented.
 
 
+
 a. Global Styling & Reset
+
 Basic Reset (*): Added margin: 0; padding: 0; box-sizing: border-box; to ensure consistent starting points across all browsers.
 
 
@@ -81,6 +95,7 @@ Rounded Corners: Added border-radius: 10px; to all main content blocks and butto
 
 
 b. Responsive Design Implementation
+
 
 Relative Units (3.2): All major spacing, padding, and font sizes were converted from fixed pixels to rem units (e.g., max-width: 1100px became max-width: 68.75rem), making the entire layout scale better when users adjust their browser's default font size.
 
@@ -96,10 +111,12 @@ Course Listings: On desktop, the .course-listing and .course-list sections were 
 
 
 Media Queries (3.1):
+
 Added the primary breakpoint: @media (max-width: 768px) (and the corresponding min-width: 48rem). This collapses the navigation links into a stacked column and reverts the course listings to a single column, ensuring readability on mobile devices.
 
 
 Responsive Images (3.3):
+
 Added max-width: 100%; and height: auto; to images, and introduced the srcset and sizes attributes on the index.html image to serve different file sizes based on the screen width.
 
 
@@ -107,6 +124,12 @@ c. Specific Component Styling
 
 
 Header/Footer: Applied a dark background (#333) and set up the distinct accent blue bottom border (#007bff) on the header.
+
+
+                                                                                            CHANGES 
+
+																							
+	I CHANGED THE WEBSITE FOLDER BUT THE CONTENT AND THE FUNCTIONALITYARE STILL THE SAME 
 
 
 
