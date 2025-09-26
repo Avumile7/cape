@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - UI/UX Design Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="enquery.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enquiry-form">
+            <h1>Course Enquiry Form</h1>
+            <p>Please fill out the form below and we will get back to you shortly.</p>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Interested Course:</label>
+                <select id="course" name="course">
+                    <option value="ui-fundamentals">UI Fundamentals</option>
+                    <option value="ux-research">UX Research & Strategy</option>
+                    <option value="prototyping">Prototyping & Testing</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UI/UX Design Courses. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

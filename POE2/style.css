@@ -1,0 +1,241 @@
+/* 3.2 Relative Units: Base Font Size and Units */
+html {
+    /* Set base for rem: 1rem = 16px */
+    font-size: 100%; 
+}
+
+/* Basic Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    /* 3.2 Relative Units: Use 'rem' for max-width */
+    max-width: 68.75rem; /* 1100px / 16 = 68.75rem */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1.25rem; /* 2rem / 16 = 1.25rem */
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 0.3125rem solid #007bff; /* 5px / 16 = 0.3125rem */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    /* 3.2 Relative Units: Use 'rem' for margins */
+    margin: 0 0.9375rem; /* 15px / 16 = 0.9375rem */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Main Content Sections */
+main {
+    padding: 2rem 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: #fff;
+    border-radius: 0.625rem; /* 10px / 16 = 0.625rem */
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    /* 3.2 Relative Units: Use 'rem' for padding */
+    padding: 0.75rem 1.5625rem; /* 12px/16 and 25px/16 */
+    text-decoration: none;
+    border-radius: 0.3125rem; /* 5px/16 */
+    font-weight: bold;
+    /* FIX: Corrected the invalid property name */
+    transition: background 0.3s ease; 
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+.introduction img {
+    /* 3.2 Relative Units: Use '%' for width to ensure responsiveness */
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.introduction, 
+.course-listing, 
+.testimonials, 
+.about-hero, 
+.mission-statement, 
+.team, 
+.courses-header, 
+.course-list, 
+.enquiry-form, 
+.contact-info, 
+.map-location {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.625rem; /* 10px/16 */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px/16 and 5px/16 */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.125rem solid #ccc; /* 2px/16 */
+    padding-bottom: 0.5rem;
+}
+
+/* Course Cards */
+.course-card, .course-item {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 0.5rem; /* 8px/16 */
+    margin-bottom: 1rem;
+}
+
+.course-card h3, .course-item h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+/* Forms (adjusting to relative units) */
+.enquiry-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-form label, 
+.enquiry-form input, 
+.enquiry-form select, 
+.enquiry-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.enquiry-form input, 
+.enquiry-form select, 
+.enquiry-form textarea {
+    padding: 0.625rem; /* 10px/16 */
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem; /* 5px/16 */
+}
+
+.enquiry-form button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem; /* 12px/16 */
+    border: none;
+    border-radius: 0.3125rem; /* 5px/16 */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* ================================================= */
+/* 3.1 Breakpoints: Media Queries for Tablet and Desktop */
+/* ================================================= */
+
+/* Tablet/Desktop Breakpoint (screens wider than 768px/48rem) */
+@media (min-width: 48rem) { 
+    
+    /* 3.1 Implement a multi-column layout on larger screens */
+    /* Course Listing on index.html */
+    .course-listing {
+        display: flex;
+        gap: 1.5rem; 
+    }
+    .course-card {
+        flex: 1; /* Each card takes up an equal portion of the space */
+        margin-bottom: 0; 
+    }
+
+    /* Course List on courses.html (using the same principle) */
+    .course-list {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap if there are many */
+        gap: 1.5rem;
+    }
+    .course-item {
+        /* Distribute the items across the row, e.g., 3 per row (30% width) */
+        flex: 1 1 calc(33.333% - 1rem); 
+        margin-bottom: 0;
+    }
+
+    /* 3.1 Modify the font sizes for better reading */
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Mobile-only adjustments (screens up to 768px) */
+@media (max-width: 48rem) { 
+    /* 3.1 Modify the navigation to stack */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.625rem 0; /* 10px/16 */
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+}
