@@ -47,6 +47,15 @@ Responsive Images (3.3): Added max-width: 100%; and height: auto; to images, and
 
 c. Specific Component Styling
 Header/Footer: Applied a dark background (#333) and set up the distinct accent blue bottom border (#007bff) on the header.
+                                                                                                      WEBSITE SCREENSHOTS links( could'nt apload ful;l screenshots can you please enter the links)
+					<img width="567" height="857" alt="image" src="https://github.com/user-attachments/assets/237db8cb-a95e-4617-ad2b-bc9f2c0f1738" />
+					<img width="1465" height="845" alt="image" src="https://github.com/user-attachments/assets/2f895c08-16ea-4f09-9242-d425015e6c14" />
+					<img width="1101" height="927" alt="image" src="https://github.com/user-attachments/assets/e4e77d1b-a3a3-48ca-b60b-f58450e58ed1" />
+
+
+
+
+
                                                                                                       3. Referencing
 
 	World Wide Web Consortium (W3C) (2025) Cascading Style Sheets Level 3/4. Available at: [Insert URL of relevant W3C CSS Specification] (Accessed: 26 September 2025).
